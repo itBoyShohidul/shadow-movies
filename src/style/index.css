@@ -1,0 +1,189 @@
+/* ============
+  Default
+============ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+:root {
+  --primary: rgb(24, 201, 245);
+}
+/* ============
+  Nav Bar
+============ */
+.nav {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.nav-left > ul > li {
+  list-style-type: none;
+  display: inline;
+  font-size: 1.4rem;
+  margin: 0 10px;
+}
+.nav-left > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+/* ============
+  Search
+============ */
+.search-input {
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 0 20px;
+}
+.search-btn {
+  border: none;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  color: #fff;
+  border-radius: 5px;
+}
+.search-btn:hover {
+  cursor: pointer;
+}
+/* ============
+  Movie
+============ */
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+.movie {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  width: 312px;
+}
+.movie > img {
+  width: 100%;
+  height: 300px;
+}
+.movie > a {
+  text-decoration: none;
+}
+.movie a > h3 {
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+.movie > p {
+  padding: 10px 50px;
+}
+.movie-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.movie-desc > p {
+  width: 70%;
+}
+.movie-desc > h5 {
+  font-size: 1rem;
+  width: 15%;
+  height: 40px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: gray;
+  border-radius: 50%;
+  color: gold;
+}
+/* ============
+  Single Movie
+============ */
+.single-movie {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.single-movie > img {
+  width: 620px;
+  height: 510px;
+}
+.single-movie-desc {
+  text-align: left;
+}
+.movie-title {
+  font-size: 3rem;
+  margin: 15px 0;
+  text-align: center;
+}
+.movie-overview {
+  font-size: 1rem;
+  margin: 30px 0;
+}
+/* ============
+  Footer
+============ */
+.footer {
+  background-color: var(--primary);
+  font-size: 1rem;
+  padding: 8px 0;
+  font-weight: bold;
+  margin-top: 80px;
+}
+.footer-text {
+  text-align: center;
+  color: #fff;
+}
+.footer-text > a {
+  text-decoration: none;
+  color: #fff;
+}
+/* ============
+  Mobile Responsive
+============ */
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  }
+  .nav * {
+    margin: 10px auto;
+  }
+  .search-input {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .single-movie {
+    width: 90%;
+  }
+  .single-movie > img {
+    width: 100%;
+  }
+  .footer-text {
+    font-size: 0.6rem;
+  }
+}
